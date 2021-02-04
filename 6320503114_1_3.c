@@ -1,7 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    double n;
-    scanf("%lf",&n);
+    long long int n;
+    scanf("%lld",&n);
+
+
+
 
 }
