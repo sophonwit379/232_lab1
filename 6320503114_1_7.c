@@ -10,24 +10,15 @@ int main()
     b=(tmp-a)/100;
     if(b>=0 && b<=11)
     {
-        if(a>0 && a<10)
-            printf("%d:0%d a.m.",b,a);
-        else
-            printf("%d:%d a.m.",b,a);
+        printf("%d:%d a.m.",b,a);
     }
     else if(b==12)
     {
-        if(a>0 && a<10)
-            printf("%d:0%d a.m.",b,a);
-        else
-            printf("%d:%d a.m.",b,a);
+        printf("%d:%d p.m.",b,a);
     }
     else
     {
-        if(a>0 && a<10)
-            printf("%d:0%d a.m.",b-12,a);
-        else
-            printf("%d:%d a.m.",b-12,a);
+        printf("%d:%d p.m.",b-12,a);
     }
 
 
