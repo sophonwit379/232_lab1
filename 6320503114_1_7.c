@@ -3,9 +3,9 @@
 int main()
 {
     float in;
-    int tmp,a,b;
+    int tmp,a,b,c;
     scanf("%f",&in);
-    tmp=ceil(in*100);
+    tmp=in*100;
     a=tmp%100;
     b=(tmp-a)/100;
     if(b>=0 && b<=11)
