@@ -1,16 +1,19 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
     float in;
     int tmp,a,b;
     scanf("%f",&in);
-    tmp=in*100;
+    tmp=ceil(in*100);
     a=tmp%100;
-    b=tmp-a;
-    if(b>=0 && b<=11.59)
-        printf("%f a.m.",in);
+    b=(tmp-a)/100;
+    if(b>=0 && b<=11)
+        printf("%d:%d a.m.",b,a);
+    else if(b==12)
+        printf("%d:%d p.m.",b,a);
     else
-        printf("%f p.m.",in-12)
+        printf("%d:%d p.m.",b-12,a);
 
 
 }
