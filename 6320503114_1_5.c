@@ -12,10 +12,10 @@ int main()
         if(max<num[i])
         {
             max=num[i];
-            lo=i+1;
+            lo=i;
         }
     }
-    printf("%d %d",lo,max);
+    printf("%d %d",lo+1,max);
 
 
 }
