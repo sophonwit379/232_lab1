@@ -9,11 +9,26 @@ int main()
     a=tmp%100;
     b=(tmp-a)/100;
     if(b>=0 && b<=11)
-        printf("%d:%d a.m.",b,a);
+    {
+        if(a>0 && a<10)
+            printf("%d:0%d a.m.",b,a);
+        else
+            printf("%d:%d a.m.",b,a);
+    }
     else if(b==12)
-        printf("%d:%d p.m.",b,a);
+    {
+        if(a>0 && a<10)
+            printf("%d:0%d a.m.",b,a);
+        else
+            printf("%d:%d a.m.",b,a);
+    }
     else
-        printf("%d:%d p.m.",b-12,a);
+    {
+        if(a>0 && a<10)
+            printf("%d:0%d a.m.",b-12,a);
+        else
+            printf("%d:%d a.m.",b-12,a);
+    }
 
 
 }
